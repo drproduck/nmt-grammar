@@ -6,23 +6,28 @@
 # For a setup that preprocesses and trains a larger data set,
 # check https://github.com/rsennrich/wmt16-scripts/tree/master/sample
 
+CUDA_VISIBLE_DEVICES=3
 ../nematus/nmt.py \
-  --model models/toymodel.npz \
-  --datasets data/corpus.ro.tok data/corpus.en.tok \
-  --dictionaries data/corpus.ro.tok.json data/corpus.en.tok.json \
+  --model models2/toymodel.npz \
+  --datasets data/corpus.fr.tok data/corpus.en.tok \
+  --dictionaries data/corpus.fr.tok.json data/corpus.en.tok.json \
   --dim_word 500 \
   --dim 1024 \
   --maxlen 50 \
-  --source_vocab_sizes 90000 \
-  --target_vocab_size 90000 \
+  --source_vocab_sizes 30000 \
+  --target_vocab_size 30000 \
   --optimizer adam \
   --learning_rate 0.0001 \
   --batch_size 80 \
   --no_shuffle \
   --dispFreq 500 \
-  --finish_after 5000 \
+  --finish_after 20000 \
   --saveFreq 10000 \
   --dropout_embedding 0.2 \
   --dropout_hidden 0.1 \
   --dropout_source 0.1 \
- --dropout_target 0.1 
+  --dropout_target 0.1 \
+  --use_layer_norm \
+  --enc_depth 2\
+  --dec_depth 2\
+  --tie_decoder_embeddings
