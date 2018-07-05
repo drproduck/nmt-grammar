@@ -20,3 +20,7 @@ INFO: [2018-07-05 03:29:07] Epoch: 0 Update: 100 Loss/word: 7.73906423743 Words/
 INFO: [2018-07-05 03:30:30] Epoch: 0 Update: 200 Loss/word: 5.88770069558 Words/sec: 2178.35355248 Sents/sec: 95.8967033696
 INFO: [2018-07-05 03:31:54] Epoch: 0 Update: 300 Loss/word: 5.43422703742 Words/sec: 2180.66804782 Sents/sec: 95.6328493725
 INFO: [2018-07-05 03:33:16] Epoch: 0 Update: 400 Loss/word: 5.16394682875 Words/sec: 2226.1217911 Sents/sec: 96.707489581
+INFO: [2018-07-05 03:34:41] Epoch: 0 Update: 500 Loss/word: 4.97452834396 Words/sec: 2156.97652381 Sents/sec: 94.4644013274
+INFO: [2018-07-05 03:36:05] Epoch: 0 Update: 600 Loss/word: 4.764255504 Words/sec: 2174.44251845 Sents/sec: 95.191280364
+INFO: [2018-07-05 03:37:28] Epoch: 0 Update: 700 Loss/word: 4.5995033993 Words/sec: 2174.08278834 Sents/sec: 95.981757465
+INFO: [2018-07-05 03:38:53] Epoch: 0 Update: 800 Loss/word: 4.41005668439 Words/sec: 2170.96217813 Sents/sec: 94.579847656
