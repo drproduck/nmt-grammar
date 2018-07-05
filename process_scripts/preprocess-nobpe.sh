@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#../MYDIR/data/corpus
 P=$1
 
 # source language (example: fr)
@@ -9,7 +10,7 @@ T=$3
 
 # tokenize
 perl tokenizer.perl -threads 8 -l $S < ${P}.${S} > ${P}.${S}.tok
-perl tokenizer.perl -threads 8 -l $T < ${P}.${T} > ${P}.${T}.tok
+#perl tokenizer.perl -threads 8 -l $T < ${P}.${T} > ${P}.${T}.tok
 
 # build dictionary
 python build_dictionary.py ${P}.${S}.tok

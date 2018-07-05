@@ -139,11 +139,14 @@ class Translator(object):
         models = self._load_models(process_id, sess)
 
         # listen to queue in while loop, translate items
+
+        i = 0
         while True:
             input_item = self._input_queue.get()
 
             if input_item is None:
                 break
+            
             idx = input_item.idx
             request_id = input_item.request_id
 
@@ -166,7 +169,6 @@ class Translator(object):
         x, x_mask, _, _ = prepare_data(x, y_dummy, maxlen=None)
 
         sample = inference.beam_search(models, sess, x, x_mask, k)
-
         return sample
 
 
