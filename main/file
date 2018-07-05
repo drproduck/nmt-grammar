@@ -1,0 +1,22 @@
+INFO: Namespace(batch_size=80, beamFreq=10000, beam_size=12, clip_c=1, datasets=['../data/src/fr.tok.train', '../data/src/en.tok.fix.train'], dec_base_recurrence_transition_depth=2, dec_deep_context=False, dec_depth=2, dec_high_recurrence_transition_depth=1, decay_c=0, dictionaries=['../data/src/fr.tok.json', '../data/src/en.tok.fix.json'], dim_per_factor=[512], dispFreq=100, dropout_embedding=0.4, dropout_hidden=0.3, dropout_source=0.3, dropout_target=0.3, embedding_size=512, enc_depth=2, enc_recurrence_transition_depth=1, factors=1, finish_after=100000, keep_train_set_in_memory=False, learning_rate=0.0001, map_decay_c=0, max_epochs=5000, maxibatch_size=20, maxlen=50, model_version=0.2, n_best=False, n_threads=5, normalize=True, optimizer='adam', output_hidden_activation='tanh', patience=10, prior_model=None, reload=None, reload_training_progress=True, run_validation=False, sampleFreq=10000, saveFreq=10000, saveto='models/model.npz', shuffle_each_epoch=True, sort_by_length=True, source_dataset='../data/src/fr.tok.train', source_dicts=['../data/src/fr.tok.json'], source_vocab_sizes=[40000], state_size=1024, summaryFreq=0, summary_dir=None, target_dataset='../data/src/en.tok.fix.train', target_dict='../data/src/en.tok.fix.json', target_embedding_size=512, target_vocab_size=38560, tie_decoder_embeddings=True, tie_encoder_decoder_embeddings=False, token_batch_size=0, translate_valid=False, translation_maxlen=200, use_dropout=False, use_layer_norm=True, validFreq=5000, valid_batch_size=80, valid_datasets=None, valid_source_dataset='../data/src/fr.tok.val', valid_target_dataset='../data/src/en.tok.fix.val', valid_token_batch_size=0)
+2018-07-05 03:26:48.266854: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-07-05 03:26:50.609176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:83:00.0
+totalMemory: 11.93GiB freeMemory: 11.81GiB
+2018-07-05 03:26:50.609223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-07-05 03:26:50.964545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-05 03:26:50.964590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0 
+2018-07-05 03:26:50.964599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N 
+2018-07-05 03:26:50.964950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11435 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:83:00.0, compute capability: 5.2)
+INFO: Building model...
+INFO: Initializing model parameters from scratch...
+INFO: Done
+INFO: Reading data...
+INFO: Done
+INFO: Initial uidx=0
+INFO: Starting epoch 0
+INFO: [2018-07-05 03:29:07] Epoch: 0 Update: 100 Loss/word: 7.73906423743 Words/sec: 2054.59310365 Sents/sec: 89.5037917548
+INFO: [2018-07-05 03:30:30] Epoch: 0 Update: 200 Loss/word: 5.88770069558 Words/sec: 2178.35355248 Sents/sec: 95.8967033696
+INFO: [2018-07-05 03:31:54] Epoch: 0 Update: 300 Loss/word: 5.43422703742 Words/sec: 2180.66804782 Sents/sec: 95.6328493725
+INFO: [2018-07-05 03:33:16] Epoch: 0 Update: 400 Loss/word: 5.16394682875 Words/sec: 2226.1217911 Sents/sec: 96.707489581
