@@ -1,0 +1,3 @@
+first, make sure data is grammar-parsed
+run fix_blank_line.sh
+run preprocess.sh (tokenize + vocabulary)

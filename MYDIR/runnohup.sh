@@ -1,2 +1,0 @@
-CUDA_VISIBLE_DEVICES=3 ./train.sh
-
